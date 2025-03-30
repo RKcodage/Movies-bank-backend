@@ -12,6 +12,7 @@ const User = mongoose.model("User", {
   hash: String,
   salt: String,
   favorites: [String],
+  wishlist: { type: [String], default: [] },
   resetPasswordToken: { type: String, default: null },
   resetPasswordExpires: { type: Date, default: null },
 });
